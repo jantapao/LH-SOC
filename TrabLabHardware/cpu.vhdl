@@ -47,15 +47,15 @@ constant op_HLT      : std_logic_vector(7 DOWNTO 4):="0000"; --Interrompe execuc
 constant op_IN       : std_logic_vector(7 DOWNTO 4):="0001"; --Empilha um byte recebido do codec.--   
 constant op_OUT      : std_logic_vector(7 DOWNTO 4):="0010"; --Desempilha um byte e o envia para o codec.
 constant op_PUSHIP   : std_logic_vector(7 DOWNTO 4):="0011"; --Empilha o endereço armazenado no registrador IP(2 bytes, primeiro MSB e depois LSB).
-constant op_PUSH_IMM : std_logic_vector(7 DOWNTO 4):="0100"; --Empilha um byte contendo imediato (armazenado nos 4 bits menos significativos da instru¸c˜ao).
+constant op_PUSH_IMM : std_logic_vector(7 DOWNTO 4):="0100";
 constant op_DROP     : std_logic_vector(7 DOWNTO 4):="0101"; --Elimina um elemento da pilha
 constant op_DUP      : std_logic_vector(7 DOWNTO 4):="0110"; --Reempilha o elemento no topo da pilha
 constant op_ADD      : std_logic_vector(7 DOWNTO 4):="1000"; --Desempilha Op1 e Op2 e empilha (Op1 + Op2).
-constant op_SUB      : std_logic_vector(7 DOWNTO 4):="1001"; --Desempilha Op1 e Op2 e empilha (Op1 − Op2).
+constant op_SUB      : std_logic_vector(7 DOWNTO 4):="1001"; 
 constant op_NAND     : std_logic_vector(7 DOWNTO 4):="1010"; --Desempilha Op1 e Op2 e empilha NAND(Op1, Op2).
 constant op_SLT      : std_logic_vector(7 DOWNTO 4):="1011"; --Desempilha Op1 e Op2 e empilha (Op1 < Op2).
-constant op_SHL      : std_logic_vector(7 DOWNTO 4):="1100"; --Desempilha Op1 e Op2 e empilha (Op1 ≪ Op2).
-constant op_SHR      : std_logic_vector(7 DOWNTO 4):="1101"; --Desempilha Op1 e Op2 e empilha (Op1 ≫ Op2).
+constant op_SHL      : std_logic_vector(7 DOWNTO 4):="1100"; 
+constant op_SHR      : std_logic_vector(7 DOWNTO 4):="1101"; 
 constant op_JEQ      : std_logic_vector(7 DOWNTO 4):="1110"; --Desempilha Op1(1 byte), Op2(1 byte) e Op3(2 bytes); Verifica se (Op1 = Op2), caso positivo soma Op3 no registrador IP.
 constant op_JMP      : std_logic_vector(7 DOWNTO 4):="1111"; --Desempilha Op1(2 bytes) e o atribui no registrador IP
 
