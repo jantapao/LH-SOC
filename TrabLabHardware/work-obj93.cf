@@ -1,0 +1,13 @@
+v 4
+file . "memory_tb.vhdl" "5a36c18dfd9b39d77adec2053ed95b4dca3cfde6" "20231025064210.542":
+  entity memory_tb at 1( 0) + 0 on 25;
+  architecture flex of memory_tb at 10( 165) + 0 on 26;
+file . "codec_tb.vhdl" "39a6b56d759a31d5db1795a74f65a262020c40ce" "20231025063608.493":
+  entity codec_tb at 1( 0) + 0 on 21;
+  architecture flex of codec_tb at 9( 123) + 0 on 22;
+file . "codec.vhdl" "7e1b032e4d2923fa9c35d34699200a50d0c70ec0" "20231025063606.416":
+  entity codec at 1( 0) + 0 on 19;
+  architecture flex of codec at 20( 545) + 0 on 20;
+file . "memory.vhdl" "98f0f5edf01320efe445818cdd41212be6f80c5b" "20231025064205.308":
+  entity memory at 1( 0) + 0 on 23;
+  architecture behavioral of memory at 24( 880) + 0 on 24;
